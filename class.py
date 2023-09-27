@@ -1,3 +1,5 @@
+
+
 # a = 123
 # print(a)
 # print(type(a))
@@ -79,82 +81,169 @@
 
 
 
-money = 3000
+# money = 3000
 
-if money >= 3000:
-    print("taxi")
-else:
-    print("walk")
-
-
-pocket = ['paper', 'cellphone', 'money', 'card']
-
-if 'money' not in pocket:
-    print("walk")
-else:
-    print("walk")
+# if money >= 3000:
+#     print("taxi")
+# else:
+#     print("walk")
 
 
-# 백준 오븐 시계(2525)
-a, b = map(int, input().split())
-c = int(input())
-print(((a*60+b+c)//60)%24, (a*60+b+c)%60)
+# pocket = ['paper', 'cellphone', 'money', 'card']
+
+# if 'money' not in pocket:
+#     print("walk")
+# else:
+#     print("walk")
 
 
-# 백준 알람 시계(2884)
-h, m = map(int, input().split())
-sum = h*60+m-45
-print(sum//60%24, sum%60)
+# # 백준 오븐 시계(2525)
+# a, b = map(int, input().split())
+# c = int(input())
+# print(((a*60+b+c)//60)%24, (a*60+b+c)%60)
 
 
-score = [90, 25, 67, 45, 80]
-for i in score: 
-    if i >= 80: 
-        print("%d번 학생은 합격입니다." % (score.index(i) + 1))
-    else: 
-        print("%d번 학생은 불합격입니다." % (score.index(i) + 1))
+# # 백준 알람 시계(2884)
+# h, m = map(int, input().split())
+# sum = h*60+m-45
+# print(sum//60%24, sum%60)
 
 
-score = [90, 25, 67, 45, 80]
-for i in score: 
-    if i <= 50: 
-        print("%d번 학생 보충학습입니다" % (score.index(i) + 1))
-    else: 
-        continue
+# score = [90, 25, 67, 45, 80]
+# for i in score: 
+#     if i >= 80: 
+#         print("%d번 학생은 합격입니다." % (score.index(i) + 1))
+#     else: 
+#         print("%d번 학생은 불합격입니다." % (score.index(i) + 1))
 
 
-temp = [i for i in range(11) if (i%2)!=0 ]
-print(temp)
-print(sum(temp))
+# score = [90, 25, 67, 45, 80]
+# for i in score: 
+#     if i <= 50: 
+#         print("%d번 학생 보충학습입니다" % (score.index(i) + 1))
+#     else: 
+#         continue
 
 
-coke = 10
-
-while 1:
-    pay = int(input())
-
-    if coke <= 0:
-        print("콜라가 다 떨어졌습니다.\n")
-        print("%d원을 돌려드립니다." %pay)
-    elif coke > 0 & pay == 300:
-        print("콜라를 드립니다.")
-    elif coke > 0 & pay > 300:
-        print("콜라를 드립니다.\n")
-        print("잔돈은 %d원입니다" %pay-300)
-    elif pay < 300:
-        print("금액이 부족합니다.\n")
-        print("%d원을 돌려드립니다." %pay)
+# temp = [i for i in range(11) if (i%2)!=0 ]
+# print(temp)
+# print(sum(temp))
 
 
-member = int(input())
-people = []
+# coke = 10
 
-for _ in range(member):
-    age, name = input().split()
-    age = int(age)
-    people.append((age, name))
+# while 1:
+#     pay = int(input())
 
-people = sorted(people, key=lambda x: x[0])
+#     if coke <= 0:
+#         print("콜라가 다 떨어졌습니다.\n")
+#         print("%d원을 돌려드립니다." %pay)
+#     elif coke > 0 & pay == 300:
+#         print("콜라를 드립니다.")
+#     elif coke > 0 & pay > 300:
+#         print("콜라를 드립니다.\n")
+#         print("잔돈은 %d원입니다" %pay-300)
+#     elif pay < 300:
+#         print("금액이 부족합니다.\n")
+#         print("%d원을 돌려드립니다." %pay)
 
-for p in people:
-    print(p[0], p[1])
+
+# member = int(input())
+# people = []
+
+# for _ in range(member):
+#     age, name = input().split()
+#     age = int(age)
+#     people.append((age, name))
+
+# people = sorted(people, key=lambda x: x[0])
+
+# for p in people:
+#     print(p[0], p[1])
+
+
+# class Calculator:
+#     def __init__(self):
+#         self.result = 0
+  
+#     def add(self, num):
+#         self.result += num
+#         return self.result
+    
+#     def sub(self, num):
+#         self.result -= num
+#         return self.result
+
+# cal1 = Calculator()
+# cal2 = Calculator()
+
+# print(cal1.add(1))
+# print(cal1.add(2))
+# print(cal2.add(3))
+# print(cal2.add(4))
+
+
+# class Calculator:
+#     # def setdata(self, num1, num2):
+#     #     self.num1 = num1
+#     #     self.num2 = num2
+
+#     def __init__(self) -> None:
+#         pass
+
+#     def add(self):
+#         result = self.num1 + self.num2
+#         return result
+
+#     def sub(self):
+#         result = self.num1 - self.num2
+#         return result
+    
+        
+#     def mul(self):
+#         result = self.num1 * self.num2
+#         return result
+    
+        
+#     def div(self):
+#         result = self.num1 / self.num2
+#         return result
+    
+# a = Calculator()
+# a.setdata(3, 2)
+# print(a.add())
+# print(a.sub())
+# print(a.mul())
+# print(a.div())
+
+
+import mod1
+print(mod1.add(1, 2))
+
+import game.sound.echo
+game.sound.echo.echo_test()
+
+from game.sound import echo
+echo.echo_test()
+
+from game.sound.echo import echo_test
+echo_test()
+
+from game.sound import *
+echo.echo_test()
+
+
+try:
+    print(1+'b')
+except TypeError:
+    print("Error")
+
+l = [10, 20, 30]
+try:
+    index, x = map(int, input("input index and num: ").split())
+    print(l[index] / x)
+except ZeroDivisionError as e:
+    print(e)
+except IndexError as e:
+    print(e)
+
