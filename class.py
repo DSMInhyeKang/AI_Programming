@@ -1,3 +1,5 @@
+
+
 # a = 123
 # print(a)
 # print(type(a))
@@ -158,6 +160,93 @@
 
 # for p in people:
 #     print(p[0], p[1])
+
+
+# class Calculator:
+#     def __init__(self):
+#         self.result = 0
+  
+#     def add(self, num):
+#         self.result += num
+#         return self.result
+    
+#     def sub(self, num):
+#         self.result -= num
+#         return self.result
+
+# cal1 = Calculator()
+# cal2 = Calculator()
+
+# print(cal1.add(1))
+# print(cal1.add(2))
+# print(cal2.add(3))
+# print(cal2.add(4))
+
+
+# class Calculator:
+#     # def setdata(self, num1, num2):
+#     #     self.num1 = num1
+#     #     self.num2 = num2
+
+#     def __init__(self) -> None:
+#         pass
+
+#     def add(self):
+#         result = self.num1 + self.num2
+#         return result
+
+#     def sub(self):
+#         result = self.num1 - self.num2
+#         return result
+    
+        
+#     def mul(self):
+#         result = self.num1 * self.num2
+#         return result
+    
+        
+#     def div(self):
+#         result = self.num1 / self.num2
+#         return result
+    
+# a = Calculator()
+# a.setdata(3, 2)
+# print(a.add())
+# print(a.sub())
+# print(a.mul())
+# print(a.div())
+
+
+import mod1
+print(mod1.add(1, 2))
+
+import game.sound.echo
+game.sound.echo.echo_test()
+
+from game.sound import echo
+echo.echo_test()
+
+from game.sound.echo import echo_test
+echo_test()
+
+from game.sound import *
+echo.echo_test()
+
+
+try:
+    print(1+'b')
+except TypeError:
+    print("Error")
+
+l = [10, 20, 30]
+try:
+    index, x = map(int, input("input index and num: ").split())
+    print(l[index] / x)
+except ZeroDivisionError as e:
+    print(e)
+except IndexError as e:
+    print(e)
+
 
 
 ## 코드업(성실한 개미)
