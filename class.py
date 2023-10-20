@@ -327,7 +327,6 @@
 
 # 수행평가 대비
 string = "python is strong, you need python"
-
 print(string[10:-17])
 print(string[18:-7]) # 출력 값은?
 
@@ -1011,3 +1010,6 @@ try:
     three_multiple()
 except Exception as e:  
     print("예외가 발생했습니다.", e)
+
+
+    # 파이썬 문법 수행 만점 ^-^
